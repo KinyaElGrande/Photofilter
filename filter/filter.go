@@ -8,7 +8,7 @@ import (
 
 //Gray transforms an image to Grayscale
 func Gray(im image.Image) image.Image {
-	//creating a blank Graysclae image
+	//creating a blank Grayscale image
 	imgbounds := im.Bounds()
 	width, height := imgbounds.Max.X, imgbounds.Max.Y
 
