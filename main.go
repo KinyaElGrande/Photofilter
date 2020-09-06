@@ -35,7 +35,7 @@ func main() {
 		panic(err.Error())
 	}
 
-	grayScale := filter.Gray(imgContent)
+	grayScale := filter.Mosaic(imgContent)
 
 	if imgFormat == "jpeg" {
 		jpeg.Encode(os.Stdout, grayScale, nil)
